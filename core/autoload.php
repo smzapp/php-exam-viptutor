@@ -1,5 +1,8 @@
 <?php
 
+require_once 'common.php';
+
+
 /**
  * Load classes 
  */

@@ -107,7 +107,7 @@ trait ExportTrait{
                 break;
             default: // html
                 if (!$data->count()) {
-                    return $this->htmlTemplate('Sorry, no matching data was found');
+                    return view('template', 'Sorry, no matching data was found');
                 }
                 
                 // extract headings
@@ -133,7 +133,7 @@ trait ExportTrait{
                     $rows[] = $row;
                 }
                 $rows = implode('', $rows);
-                return $this->htmlTemplate('<table>' . $headings . $rows . '</table>');
+                return view('template', '<table>' . $headings . $rows . '</table>');
                 break;
         }
     }

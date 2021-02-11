@@ -20,9 +20,9 @@ require_once('vendor/autoload.php');
 require_once('classes/Controller.php');
 
 // process the args
-$args = collect($_REQUEST);
+$args   = collect($_REQUEST);
 $format = $args->pull('format') ?: 'html';
-$type = $args->pull('type');
+$type   = $args->pull('type');
 if (!$type) {
     exit('Please specify a type');
 }
