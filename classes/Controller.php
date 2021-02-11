@@ -5,11 +5,11 @@ use Illuminate\Support;  // https://laravel.com/docs/5.8/collections - provides 
 use LSS\Array2Xml;
 
 // NOTE by sam:
-// we'll create controller logic in the future
+// we'll create controller logic in the futures
 class Controller {
 
     public function __construct()
     {
-        
+
     }
 }

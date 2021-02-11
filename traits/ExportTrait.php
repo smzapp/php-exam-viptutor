@@ -3,6 +3,10 @@ namespace traits;
 
 trait ExportTrait{
     
+    /**
+     * @return collection
+     * @param array
+     */
     public function getPlayerStats($search) {
         $where = [];
         if ($search->has('playerId')) $where[] = "roster.id = '" . $search['playerId'] . "'";
@@ -31,6 +35,10 @@ trait ExportTrait{
         return collect($data);
     }
 
+    /**
+     * @return collection
+     * @param array
+     */
     public function getPlayers($search) {
         $where = [];
         if ($search->has('playerId')) $where[] = "roster.id = '" . $search['playerId'] . "'";
