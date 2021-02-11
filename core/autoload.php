@@ -2,6 +2,10 @@
 
 require_once 'common.php';
 
+// prepare the request & process the arguments
+$database = 'nba2019';
+include('include/utils.php');
+require_once('vendor/autoload.php');
 
 /**
  * Load classes 

@@ -12,12 +12,7 @@
 
  use Illuminate\Support;
 
-// prepare the request & process the arguments
-$database = 'nba2019';
 require_once 'core/autoload.php';
-include('include/utils.php');
-require_once('vendor/autoload.php');
-require_once('classes/Controller.php');
 
 // process the args
 $args   = collect($_REQUEST);
