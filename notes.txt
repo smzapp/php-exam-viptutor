@@ -1,0 +1,7 @@
+Controller
+- minimize the use of require_once on classes. Autoload them instead. And then, better use of "use" keyword and namespaces
+- BaseController should not contain a method of a specific external class
+since it 
+- Class Controllers (example Exporter) should contain minimal
+number of lines since it is where the logic holds.
+- remove HTML/CSS codes from classes.

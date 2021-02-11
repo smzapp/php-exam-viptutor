@@ -14,6 +14,7 @@
 
 // prepare the request & process the arguments
 $database = 'nba2019';
+require_once 'core/autoload.php';
 include('include/utils.php');
 require_once('vendor/autoload.php');
 require_once('classes/Controller.php');
@@ -26,5 +27,6 @@ if (!$type) {
     exit('Please specify a type');
 }
 
-$controller = new Controller($args);
-echo $controller->export($type, $format);
+// excecute Exporter class and not the controller itself
+$exporter = new classes\Exporter($args);
+echo $exporter->export($type, $format);
